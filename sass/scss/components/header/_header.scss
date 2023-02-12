@@ -1,0 +1,53 @@
+.header {
+  width: 100vw;
+  height: 8rem;
+  background-color: $primary-color;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 1rem black;
+
+  overflow: hidden;
+  z-index: 100;
+
+  .header_logo {
+    width: 15%;
+    height: 100%;
+    @include flex-center;
+    // border: 1px solid red;
+
+    .header_logo_img {
+      width: 60%;
+      height: 70%;
+    }
+  }
+
+  .header_name {
+    width: auto;
+    height: 100%;
+    @include flex-center;
+    // border: 1px solid red;
+
+    h1 {
+      letter-spacing: 0.5rem;
+      font-size: 2.3rem;
+      text-shadow: 0.2rem 0.2rem 0.2rem black;
+    }
+  }
+
+  .header_user {
+    width: 15%;
+    height: 100%;
+    @include flex-center;
+    // border: 1px solid red;
+
+    p {
+      font-size: 2rem;
+      text-shadow: 0.2rem 0.2rem 0.2rem black;
+    }
+  }
+}
