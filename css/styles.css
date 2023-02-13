@@ -315,6 +315,7 @@ body {
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   color: #000;
+  font-weight: bold;
   background-color: rgb(223, 208, 208);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -322,30 +323,64 @@ body {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-
-.acresYard {
-  position: relative;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
+.cards .card_mainTop {
+  width: 100%;
+  height: 8rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
 }
-.acresYard::after {
-  content: "A";
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  bottom: 99%;
-  left: 0;
-  font-size: 3rem;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  background-color: rgb(5, 94, 5);
-  z-index: -1;
+.cards .card_mainTop .dispatch_top {
+  width: 33.3333333333%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards .card_mainTop .dispatchNumber {
+  position: relative;
+  font-size: 3.2rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.cards .card_mainMid {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+.cards .card_mainMid .dispatchSize {
+  width: 25%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #000;
+}
+.cards .card_mainMid .dispatchBoxChasInfo {
+  width: 75%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cards .card_mainMid .dispatchBoxChasInfo .dispatchEquip {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card_mainMid .dispatchBoxChasInfo .dispatchEquip:nth-child(1) {
+  border-bottom: 1px solid #000;
 }
 
 .rails_dashboard {
