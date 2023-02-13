@@ -1,10 +1,11 @@
-.imports_dashboard {
+.exports_dashboard {
   width: 100%;
   height: 200rem;
   position: absolute;
   top: 0;
   left: 0;
   @include transit3;
+
   background-color: $base-color;
 
   h1 {

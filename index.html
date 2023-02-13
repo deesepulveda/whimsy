@@ -29,21 +29,53 @@
     <!-- SIDE MENU FIXED -->
     <div class="side_menu">
       <ul class="side_ul">
-        <li class="side_li">
+        <li class="side_li" id="drivers">
           <h2 class="side_li_items side_li_items_drivers">drivers</h2>
         </li>
-        <li class="side_li"><h2 class="side_li_items">imports</h2></li>
-        <li class="side_li"><h2 class="side_li_items">exports</h2></li>
-        <li class="side_li"><h2 class="side_li_items">rails</h2></li>
-        <li class="side_li"><h2 class="side_li_items">drops</h2></li>
-        <li class="side_li"><h2 class="side_li_items">yards</h2></li>
+        <li class="side_li" id="imports">
+          <h2 class="side_li_items">imports</h2>
+        </li>
+        <li class="side_li" id="exports">
+          <h2 class="side_li_items">exports</h2>
+        </li>
+        <li class="side_li" id="rails"><h2 class="side_li_items">rails</h2></li>
+        <li class="side_li" id="drops"><h2 class="side_li_items">drops</h2></li>
+        <li class="side_li" id="yards"><h2 class="side_li_items">yards</h2></li>
       </ul>
     </div>
     <!-- MAIN DASHBOARD -->
     <div class="main_screen">
       <!-- Drivers Dashboard -->
-      <div class="drivers_dashboard">
+      <div class="dashboard drivers drivers_dashboard hideList">
         <ul class="drivers_ul">
+          <li class="drivers_li">
+            <div class="drivers_li_items drivers_li_status">Active</div>
+            <div class="drivers_li_items drivers_li_name">Name: Pawel</div>
+            <div class="drivers_li_items drivers_li_licenseNumber">
+              DL #: CD12345678
+            </div>
+            <div class="drivers_li_items drivers_li_truckNumber">
+              Truck #: 4455
+            </div>
+            <div class="drivers_li_items drivers_li_yard">
+              Parking: Mount Prospect
+            </div>
+            <div class="drivers_li_items drivers_li_edit">Edit</div>
+          </li>
+          <li class="drivers_li">
+            <div class="drivers_li_items drivers_li_status">Active</div>
+            <div class="drivers_li_items drivers_li_name">Name: Pawel</div>
+            <div class="drivers_li_items drivers_li_licenseNumber">
+              DL #: CD12345678
+            </div>
+            <div class="drivers_li_items drivers_li_truckNumber">
+              Truck #: 4455
+            </div>
+            <div class="drivers_li_items drivers_li_yard">
+              Parking: Mount Prospect
+            </div>
+            <div class="drivers_li_items drivers_li_edit">Edit</div>
+          </li>
           <li class="drivers_li">
             <div class="drivers_li_items drivers_li_status">Active</div>
             <div class="drivers_li_items drivers_li_name">Name: Pawel</div>
@@ -229,6 +261,13 @@
         </ul>
       </div>
       <!-- Imports Dashboard -->
+      <div class="dashboard imports imports_dashboard hideList">
+        <h1>imports</h1>
+      </div>
+      <!-- Exports Dashboard -->
+      <div class="dashboard exports exports_dashboard hideList">
+        <h1>exports</h1>
+      </div>
     </div>
   </body>
 </html>
