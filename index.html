@@ -28,10 +28,11 @@
     </header>
     <!-- SIDE MENU FIXED -->
     <div class="side_menu">
+      <div class="side_menu_search">
+        <label for="search"><p>Search</p></label
+        ><input name="search" type="text" />
+      </div>
       <ul class="side_ul">
-        <li class="side_li" id="drivers">
-          <h2 class="side_li_items side_li_items_drivers">drivers</h2>
-        </li>
         <li class="side_li" id="imports">
           <h2 class="side_li_items">imports</h2>
         </li>
@@ -41,10 +42,39 @@
         <li class="side_li" id="rails"><h2 class="side_li_items">rails</h2></li>
         <li class="side_li" id="drops"><h2 class="side_li_items">drops</h2></li>
         <li class="side_li" id="yards"><h2 class="side_li_items">yards</h2></li>
+        <li class="side_li" id="drivers">
+          <h2 class="side_li_items side_li_items_drivers">drivers</h2>
+        </li>
       </ul>
     </div>
     <!-- MAIN DASHBOARD -->
     <div class="main_screen">
+      <!-- Imports Dashboard -->
+      <div class="dashboard imports imports_dashboard hideList">
+        <h1>imports</h1>
+        <div class="cards cards_imports">
+          <div class="card_mainTop">
+            <div class="card_freeDay">2/24/23</div>
+            <div class="dispatchNumber">30056</div>
+          </div>
+        </div>
+      </div>
+      <!-- Exports Dashboard -->
+      <div class="dashboard exports exports_dashboard hideList">
+        <h1>exports</h1>
+      </div>
+      <!-- Rails Dashboard -->
+      <div class="dashboard rails rails_dashboard hideList">
+        <h1>rails</h1>
+      </div>
+      <!-- Drops Dashboard -->
+      <div class="dashboard drops drops_dashboard hideList">
+        <h1>drops</h1>
+      </div>
+      <!-- Yard Dashboard -->
+      <div class="dashboard yards yards_dashboard hideList">
+        <h1>yard</h1>
+      </div>
       <!-- Drivers Dashboard -->
       <div class="dashboard drivers drivers_dashboard hideList">
         <ul class="drivers_ul">
@@ -259,14 +289,6 @@
             <div class="drivers_li_items drivers_li_edit">Edit</div>
           </li>
         </ul>
-      </div>
-      <!-- Imports Dashboard -->
-      <div class="dashboard imports imports_dashboard hideList">
-        <h1>imports</h1>
-      </div>
-      <!-- Exports Dashboard -->
-      <div class="dashboard exports exports_dashboard hideList">
-        <h1>exports</h1>
       </div>
     </div>
   </body>

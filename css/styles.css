@@ -83,13 +83,36 @@ body {
   top: 0;
   right: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.side_menu .side_menu_search {
+  width: 80%;
+  height: auto;
+  margin: 15rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.side_menu .side_menu_search label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.side_menu .side_menu_search label p {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+.side_menu .side_menu_search input {
+  width: 100%;
+  height: 3rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.6392156863);
 }
 .side_menu .side_ul {
   width: 100%;
-  height: 70%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -228,6 +251,7 @@ body {
 .imports_dashboard {
   width: 100%;
   height: 200rem;
+  padding: 0 4rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -240,12 +264,13 @@ body {
 }
 .imports_dashboard h1 {
   font-size: 3rem;
-  margin-top: 5rem;
+  margin: 2rem 0 3rem;
 }
 
 .exports_dashboard {
   width: 100%;
   height: 200rem;
+  padding: 0 4rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -258,12 +283,13 @@ body {
 }
 .exports_dashboard h1 {
   font-size: 3rem;
-  margin-top: 5rem;
+  margin: 2rem 0 3rem;
 }
 
 .exports_dashboard {
   width: 100%;
   height: 200rem;
+  padding: 0 4rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -276,7 +302,107 @@ body {
 }
 .exports_dashboard h1 {
   font-size: 3rem;
-  margin-top: 5rem;
+  margin: 2rem 0 3rem;
+}
+
+.cards {
+  width: 28rem;
+  height: 65rem;
+  position: relative;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  color: #000;
+  background-color: rgb(223, 208, 208);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.acresYard {
+  position: relative;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.acresYard::after {
+  content: "A";
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 99%;
+  left: 0;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  background-color: rgb(5, 94, 5);
+  z-index: -1;
+}
+
+.rails_dashboard {
+  width: 100%;
+  height: 200rem;
+  padding: 0 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  background-color: #292828;
+}
+.rails_dashboard h1 {
+  font-size: 3rem;
+  margin: 2rem 0 3rem;
+}
+
+.drops_dashboard {
+  width: 100%;
+  height: 200rem;
+  padding: 0 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  background-color: #292828;
+}
+.drops_dashboard h1 {
+  font-size: 3rem;
+  margin: 2rem 0 3rem;
+}
+
+.yards_dashboard {
+  width: 100%;
+  height: 200rem;
+  padding: 0 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  background-color: #292828;
+}
+.yards_dashboard h1 {
+  font-size: 3rem;
+  margin: 2rem 0 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

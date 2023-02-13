@@ -1,0 +1,31 @@
+.cards {
+  width: 28rem;
+  height: 65rem;
+  position: relative;
+  @include transit3;
+  color: #000;
+  background-color: rgb(223, 208, 208);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.acresYard {
+  position: relative;
+  @include transit3;
+
+  &::after {
+    content: "A";
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 99%;
+    left: 0;
+    font-size: 3rem;
+    @include transit3;
+    background-color: rgb(5, 94, 5);
+    z-index: -1;
+  }
+}

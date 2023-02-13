@@ -5,11 +5,41 @@
   position: fixed;
   top: 0;
   right: 0;
-  @include flex-center-col;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .side_menu_search {
+    width: 80%;
+    height: auto;
+    margin: 15rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+
+    label {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      p {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+    }
+
+    input {
+      width: 100%;
+      height: 3rem;
+      box-shadow: 0.2rem 0.2rem 0.5rem #000000a3;
+    }
+  }
 
   .side_ul {
     width: 100%;
-    height: 70%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
