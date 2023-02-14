@@ -86,6 +86,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 50;
 }
 .side_menu .side_menu_search {
   width: 80%;
